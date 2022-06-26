@@ -47,9 +47,8 @@ stages:
   jobs:
   - deployment: Deploy
     displayName: Deploy job
-    pool:
-      vmImage: $(vmImageName)
-    environment: 'myenv.aksnamespace' #customize with your environment
+    pool: myAgentPool
+    environment: 'default' #customize with your environment
     strategy:
       runOnce:
         deploy:
