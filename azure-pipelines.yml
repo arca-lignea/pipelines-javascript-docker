@@ -61,6 +61,7 @@ stages:
           - task: KubernetesManifest@0
             displayName: Create imagePullSecret
             inputs:
+              kubernetesServiceConnection: 'aksServiceConnection'
               action: createSecret
               secretName: $(imagePullSecret)
               namespace: $(k8sNamespace)
