@@ -15,6 +15,7 @@ variables:
   containerRegistry: 'warlordcontainerregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
   tag: '$(Build.BuildId)'
+  k8sNamespace: 'myapp'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
