@@ -12,7 +12,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'myServiceConnection'
   imageRepository: 'mydocimage1'
-  containerRegistry: 'warlordcontainerregistry.azurecr.io'
+  containerRegistry: 'warl0rdcontainerregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
   tag: '$(Build.BuildId)'
   k8sNamespace: 'default'
