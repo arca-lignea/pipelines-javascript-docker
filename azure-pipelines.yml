@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'myServiceConnection'
+  dockerRegistryServiceConnection: 'acrServiceConnection'
   imageRepository: 'mydocimage1'
   containerRegistry: 'warl0rdcontainerregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
