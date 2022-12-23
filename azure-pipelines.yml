@@ -9,6 +9,7 @@ resources:
 - repo: self
 
 variables:
+  System.debug: true
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'acrServiceConnection'
   imageRepository: 'mydocimage1'
