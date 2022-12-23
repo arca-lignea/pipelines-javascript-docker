@@ -16,7 +16,7 @@ variables:
   containerRegistry: 'warl0rdcontainerregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
   tag: '$(Build.BuildId)'
-  k8sNamespace: 'default'
+  k8sNamespace: 'factional'
   imagePullSecret: 'image-pull-secret'
 
   # Agent VM image name
